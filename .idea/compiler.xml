@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="trans_main" target="1.5" />
+      <module name="trans_test" target="1.5" />
+      <module name="Translator_main" target="1.5" />
+      <module name="Translator_test" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
