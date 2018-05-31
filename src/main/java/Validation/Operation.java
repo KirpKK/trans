@@ -1,3 +1,5 @@
+package Validation;
+
 import org.w3c.dom.Node;
 
 /**
@@ -11,7 +13,7 @@ import org.w3c.dom.Node;
     <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yFyD_yqGEeenXOl9Fz5tlQ" value="2"/>
     <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yFyEACqGEeenXOl9Fz5tlQ" value="2"/>
     </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_yFyEASqGEeenXOl9Fz5tlQ" name="Method1"/>
+    <ownedOperation xmi:type="uml:Validation.Operation" xmi:id="_yFyEASqGEeenXOl9Fz5tlQ" name="Method1"/>
     </packagedElement>*/
 public class Operation {
     private String type;
@@ -19,7 +21,7 @@ public class Operation {
     private String name;
 
     public Operation(Node node) {
-        this.type = "uml:Operation";
+        this.type = "uml:Validation.Operation";
         this.id = node.getAttributes().getNamedItem("xmi:id").getNodeValue();
         this.name = node.getAttributes().getNamedItem("name").getNodeValue();
 

@@ -1,4 +1,7 @@
+package Validation;
+
 import org.w3c.dom.Node;
+
 
 /**
  * Created by Ксения on 18.11.2017.

@@ -1,3 +1,4 @@
+package Validation;
 
 /**
  * Created by Ксения on 26.04.2017.
@@ -11,7 +12,7 @@
     <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yFyD_yqGEeenXOl9Fz5tlQ" value="2"/>
     <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yFyEACqGEeenXOl9Fz5tlQ" value="2"/>
     </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_yFyEASqGEeenXOl9Fz5tlQ" name="Method1"/>
+    <ownedOperation xmi:type="uml:Validation.Operation" xmi:id="_yFyEASqGEeenXOl9Fz5tlQ" name="Method1"/>
     </packagedElement>*/
 
 public abstract class Attribute {

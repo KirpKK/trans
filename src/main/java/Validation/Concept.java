@@ -1,3 +1,5 @@
+package Validation;
+
 import org.w3c.dom.Node;
 
 import java.util.ArrayList;
@@ -13,14 +15,14 @@ import java.util.ArrayList;
     <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yFyD_yqGEeenXOl9Fz5tlQ" value="2"/>
     <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yFyEACqGEeenXOl9Fz5tlQ" value="2"/>
     </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_yFyEASqGEeenXOl9Fz5tlQ" name="Method1"/>
+    <ownedOperation xmi:type="uml:Validation.Operation" xmi:id="_yFyEASqGEeenXOl9Fz5tlQ" name="Method1"/>
     </packagedElement>*/
 public class Concept {
     private String type;
     private String id;
     private String name;
     private ArrayList<Attribute> attr = new ArrayList<Attribute>();
-    //private ArrayList<Operation> operations;
+    //private ArrayList<Validation.Operation> operations;
 
     public Concept(Node classNode, String type) {
         this.type = type;
@@ -49,11 +51,11 @@ public class Concept {
             }
 
             /*if (childNode.getNodeName().equals("ownedAttribute")) {
-                Attribute attr = new Attribute(childNode);
+                Validation.Attribute attr = new Validation.Attribute(childNode);
                 this.setAttr(attr);
             }
             if (childNode.getNodeName().equals("ownedOperation")) {
-                Operation oper = new Operation(childNode);
+                Validation.Operation oper = new Validation.Operation(childNode);
                 this.setOperation(oper);
             }*/
         }

@@ -1,3 +1,5 @@
+package Validation;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -53,16 +55,30 @@ public class MyHashMap{
         StringBuilder sb = new StringBuilder();
 
         for (String  key:storage.keySet()) {
-            sb.append("\n" + Controller.findConcept(key).getName() + " : [");
+            sb.append("\n" + Controller
+                    .findConcept(key)
+                    .getName() + " : [");
             for (String id:storage.get(key)){
                 sb.append(Controller.findConcept(id).getName() + ", ");
             }
             sb.delete(sb.length()-2, sb.length());
             sb.append("]");
         }
+
+/*        for (String  key:storage.keySet()) {
+            System.out.println(key);
+            System.out.println(Controller
+                    .findConcept(key)
+                    .getName());
+
+        }*/
+
         return sb.toString();
     }
 
+    public void clear() {
+        storage.clear();
+    }
     public int size(){
         return storage.size();
     }
