@@ -6,7 +6,6 @@ import java.util.ArrayList;
  * Created by Ксения on 02.05.2017.
  */
 
-
 public class Optimization {
 
     protected static class IncorrectParametersException extends Exception {
